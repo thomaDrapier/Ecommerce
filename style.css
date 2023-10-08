@@ -1,0 +1,106 @@
+:root {
+    --border_radius_image: 10px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 75%;
+    height: 95%;
+    background-color: #54457F;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-color: #AC7B84;
+    margin-bottom: 110px;
+}
+
+.brand {
+    width: 15%;
+    height: 100%;
+    background-color: #4C243B;
+    margin-right: 7%;
+}
+
+.menu_tab {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #B84A62;
+    margin-right: 15%;
+}
+
+.tab {
+    width: 15%;
+    height: 100%;
+    background-color: #EC058E;
+}
+
+.shopping_icon {
+    width: 5%;
+    height: 100%;
+    background-color: #F5A6E6;
+    margin-right: 3%;
+}
+
+.account {
+    width: 5%;
+    height: 100%;
+    background-color: #62BBC1;
+}
+
+.product {
+    width: 90%;
+    height: auto;
+    display: flex;
+    background-color: #EB9FEF;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_photo img {
+    max-width: 100%;
+    border-radius: var(--border_radius_image);
+}
+
+.secondary_photos {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.secondary_photos img {
+    max-width: 100px;
+    border-radius: var(--border_radius_image);
+}
+
+.description {
+    width: 40%;
+    height: 80%;
+    background-color: green;
+    margin-left: 100px;
+}
