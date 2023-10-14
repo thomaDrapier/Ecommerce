@@ -8,25 +8,31 @@
     src: url('police/static/KumbhSans-Regular.ttf') format('truetype');
 }
 
-html,
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container {
-    width: 75%;
+    width: 100%;
     height: 95%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .menu {
@@ -34,13 +40,14 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 110px;
 }
 
 .brand {
     width: 15%;
     height: 100%;
-    margin-right: 7%;
+    margin-right: 7vw;
     display: flex;
     align-items: center;
 }
@@ -50,11 +57,11 @@ body {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    margin-right: 15%;
+    margin-right: 10vw;
 }
 
 .tab {
-    width: 15%;
+    width: auto;
     height: 100%;
     color: #69707D;
     font-family: Kumbh Sans;
@@ -101,7 +108,7 @@ body {
 }
 
 .main_photo {
-    width: 100%;
+    width: 90%;
     min-width: 300px;
 }
 
@@ -111,7 +118,7 @@ body {
 }
 
 .secondary_photos {
-    width: 100%;
+    width: 90%;
     min-width: 300px;
     display: flex;
     margin-top: 50px;
@@ -214,7 +221,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 90px;
+    height: 120px;
     width: 100%;
 }
 
@@ -276,8 +283,49 @@ body {
     }
     .description {
         margin-top: 100px;
+        margin-left: 0px;
     }
     .photos {
         width: 300px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+    }
+    .brand {
+        width: 100%;
+        margin: 0px 0px 60px 0px;
+        height: fit-content;
+        justify-content: flex-start;
+    }
+    .brand svg {
+        padding-left: 10px;
+    }
+    .menu_tab {
+        margin: 0px;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-around;
+    }
+    .menu_tab div {
+        height: fit-content;
+    }
+    .shopping_icon {
+        margin: 0px;
+        height: fit-content;
+        position: absolute;
+        top: 16px;
+        right: 100px;
+        margin: 0px;
+    }
+    .account {
+        position: absolute;
+        top: 0px;
+        right: 30px;
     }
 }
